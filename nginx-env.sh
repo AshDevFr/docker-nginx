@@ -12,7 +12,6 @@ do
                 typeset varname=$(echo ${i} | sed -e 's%\#\#IF\#__|\([a-zA-Z0-9\_\-\$]*\)|__%\1%')
                 typeset evalvar=$(eval echo "\$${varname}")
                 typeset enabled=$(echo "${evalvar}" | wc -w)
-                echo "${enabled}"
                 if [ "${enabled}" == "0" ]
                 then
                         mv ${file} ${file}.bak
