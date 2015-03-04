@@ -14,7 +14,7 @@ This repository contains Dockerfile of nginx for Docker's automated build publis
 
 Get the latest version from github
 
-    git https://github.com/AshDevFr/nginx-docker.git
+    git https://github.com/AshDevFr/docker-nginx.git
     cd nginx-docker/
 
 Before building the version, edit your config. Then, build it. 
